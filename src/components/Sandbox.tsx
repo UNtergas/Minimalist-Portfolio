@@ -32,7 +32,3 @@ const Sandbox = ({ sandbox }: { sandbox: MarkdownData<ProjectFrontMatter> }) => 
 export default Sandbox;
 
 
-//
-// < div className = "sandbox__content" >
-//     < Markdown > {project.content} </Markdown>
-// </div>

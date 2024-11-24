@@ -1,9 +1,18 @@
 import { MarkdownData,ProjectFrontMatter} from "@/app/types";
-// import Markdown from "markdown-to-jsx";
 
-const Project = ({ project }: { project: MarkdownData<ProjectFrontMatter> }) => {
+
+
+const Project = ({
+                     project,
+                     refs,
+}: {
+    project: MarkdownData<ProjectFrontMatter>;
+    refs: {
+        projectRef: (el: HTMLDivElement) => void;
+    }
+}) => {
     return (
-        <div className="project">
+        <div className="project" ref={refs.projectRef}>
             <div className="project__image"></div>
             <div className="project__details">
                 <h2 className="project__title">{project.frontMatter.title}</h2>

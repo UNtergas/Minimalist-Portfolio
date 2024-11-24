@@ -1,13 +1,10 @@
+
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google'
+
 import React from "react";
 import '@/styles/main.css';
 import Header from "@/containers/Header";
-const inter = Inter({
-    variable: "--font-inter",
-    weight: "100",
-    subsets: ["latin"],
-})
+
 
 
 export const metadata: Metadata = {
@@ -22,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable}`}>
+      <body>
         <>
             <Header/>
             <div id="page">

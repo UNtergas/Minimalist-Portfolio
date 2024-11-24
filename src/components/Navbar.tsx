@@ -12,10 +12,11 @@ const Navbar = () => {
     const closeMenu = () => {
         setMenuOpen(false)
     }
+
     return (
         <>
             <div className={'header__logo'} onClick={closeMenu}>
-                <NavLink href={'/'} callback={closeMenu}> Logo</NavLink>
+                <NavLink href={'#hero'} callback={closeMenu}> Logo</NavLink>
             </div>
             {/* Hamburger Menu Button (Visible on Mobile) */}
             <button
@@ -33,13 +34,16 @@ const Navbar = () => {
 
                 <ul>
                     <li>
-                        <NavLink href={'/about'} callback={closeMenu}>about</NavLink>
+                        <NavLink href={'#about'} callback={closeMenu}>about</NavLink>
                     </li>
                     <li>
-                        <NavLink href={'/experience'} callback={closeMenu}>experience</NavLink>
+                        <NavLink href={'#experience'} callback={closeMenu}>experience</NavLink>
                     </li>
                     <li>
-                        <NavLink href={'/project'} callback={closeMenu}>projects</NavLink>
+                        <NavLink href={'#project'} callback={closeMenu}>projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink href={'#contact'} callback={closeMenu}>contact</NavLink>
                     </li>
                 </ul>
             </nav>
