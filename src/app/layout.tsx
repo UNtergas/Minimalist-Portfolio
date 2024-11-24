@@ -1,18 +1,20 @@
+
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google'
+import {Comic_Neue} from "next/font/google";
+
 import React from "react";
 import '@/styles/main.css';
 import Header from "@/containers/Header";
-const inter = Inter({
-    variable: "--font-inter",
-    weight: "100",
-    subsets: ["latin"],
+
+const font = Comic_Neue({
+    subsets: ['latin'],
+    weight: ["400", "700"],
+    display: 'swap',
 })
 
-
 export const metadata: Metadata = {
-  title: "Main page",
-  description: "The landing page",
+  title: "Tubab-Portfolio",
+  description: "An simple portfolio website for a very simple person",
 };
 
 export default function RootLayout({
@@ -22,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable}`}>
+      <body className={font.className}>
         <>
             <Header/>
             <div id="page">

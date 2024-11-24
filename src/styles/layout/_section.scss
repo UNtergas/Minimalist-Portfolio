@@ -1,5 +1,5 @@
 .section{
-
+  margin-top: 8rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -11,5 +11,63 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    & > p{
+      font-size: 2rem;
+      max-width: 60rem;
+    }
+    .cv-link {
+      text-decoration: underline;
+      color: $black-88;
+      &:hover {
+        transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
+        cursor: pointer;
+        font-weight: bold;
+        color: $heavy-gray;
+      }
+      &:visited {
+        color: $black-88;
+      }
+    }
+
+    .highlight {
+      transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        font-weight: bold;
+      }
+      &.vietnam:hover {
+        color: red;
+      }
+      &.france:hover {
+        color: blue;
+      }
+
+      &.django:hover {
+        color: darkblue;
+      }
+
+      &.nodejs:hover {
+        color: green;
+      }
+
+      &.java:hover {
+        color: orange;
+      }
+
+      &.react:hover {
+        color: skyblue;
+      }
+
+      &.nextjs:hover {
+        color: purple;
+      }
+
+      &.docker:hover {
+        color: cornflowerblue;
+      }
+
+      // Add more keywords as needed
+    }
+
   }
 }

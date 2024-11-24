@@ -11,6 +11,7 @@ General styles
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
+
 }
 
 #page{
@@ -31,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem; /* Space between the title and the lines */
-    font-size: 8rem;
+    font-size: 6rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
     width: 50vw;
@@ -48,8 +50,8 @@ body {
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
-    @media (max-width: 768px){
-        font-size: 5rem;
+    @media (max-width: $bp-mobile){
+        font-size: 4rem;
     }
   }
 

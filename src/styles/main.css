@@ -11,6 +11,7 @@ General styles
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem; /* Space between the title and the lines */
-  font-size: 8rem;
+  font-size: 6rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
   width: 50vw;
@@ -51,11 +52,12 @@ body {
 }
 @media (max-width: 768px) {
   #page__title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
 .section {
+  margin-top: 8rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -67,19 +69,94 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-
-.about__content {
-  font-size: 1.2rem;
+.section__content > p {
+  font-size: 2rem;
   max-width: 60rem;
-  text-align: center;
-  line-height: 2rem;
+}
+.section__content .cv-link {
+  text-decoration: underline;
+  color: #1F1F1F;
+}
+.section__content .cv-link:hover {
+  transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+}
+.section__content .cv-link:visited {
+  color: #1F1F1F;
+}
+.section__content .highlight {
+  transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
+}
+.section__content .highlight:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.section__content .highlight.vietnam:hover {
+  color: red;
+}
+.section__content .highlight.france:hover {
+  color: blue;
+}
+.section__content .highlight.django:hover {
+  color: darkblue;
+}
+.section__content .highlight.nodejs:hover {
+  color: green;
+}
+.section__content .highlight.java:hover {
+  color: orange;
+}
+.section__content .highlight.react:hover {
+  color: skyblue;
+}
+.section__content .highlight.nextjs:hover {
+  color: purple;
+}
+.section__content .highlight.docker:hover {
+  color: cornflowerblue;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact__button {
+  width: 20rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 2rem;
+  color: #1F1F1F;
+  background-color: #F2F2F2;
+  border: #1F1F1F 0.1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact__button:hover {
+  background-color: #FFFFFF;
+}
+.contact__icons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.contact__footer {
+  margin-top: rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 1rem 5rem 1rem 5rem;
   max-width: 90vw;
   width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -125,12 +202,12 @@ body {
     /* Toggle button visible on mobile */
   }
   .header__nav {
-    position: fixed; /* Fix to the viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #F2F2F2; /* Fullscreen white background */
+    background-color: #F2F2F2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -141,10 +218,10 @@ body {
   }
   .header__nav ul {
     flex-direction: column;
-    gap: 1.5rem; /* Larger gap between menu items */
+    gap: 1.5rem;
   }
   .header__nav ul li a {
-    font-size: 1.5rem; /* Larger font for better usability */
+    font-size: 4rem;
   }
   .header__nav_open {
     transform: translateY(0);
@@ -175,23 +252,31 @@ body {
 .hero__scroll {
   margin-top: 2rem;
   font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.hero__scroll:hover {
+  transform: scale(1.5); /* Make it bigger on hover */
 }
 
 .project {
   display: flex;
-  gap: 1rem; /* Space between the image and text */
-  margin-bottom: 2rem; /* Space between projects */
+  gap: 1rem;
+  margin-bottom: 2rem;
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 8px;
   /* Reverse layout for odd projects */
 }
 .project__image {
-  flex: 1; /* Allow the image to take flexible width */
+  flex: 1;
   background-color: blue;
   border-radius: 4px;
   height: auto;
-  aspect-ratio: 4/3; /* Maintain a 4:3 aspect ratio */
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .project__details {
   flex: 2;
@@ -304,10 +389,15 @@ body {
   border-radius: 8px;
 }
 .sandbox-grid .sandbox__image {
-  width: 100%;
-  height: 10rem;
+  width: 20rem;
+  height: auto; /* Allow the height to adjust automatically based on content */
+  max-width: 20rem;
+  aspect-ratio: 1/1; /* Ensure a fixed 1:1 ratio (square) */
   background-color: #ddd; /* Placeholder background */
-  border-radius: 4px;
+  border-radius: 4px; /* Rounded corners */
+  background-size: contain; /* Ensure the entire image is visible */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .sandbox-grid .sandbox__details {
   display: flex;
@@ -345,15 +435,15 @@ body {
   font-size: 1.2rem;
   color: #333;
 }
-.sandbox-grid .sandbox__details .sandbox__link {
+.sandbox-grid .sandbox__details .sandbox__links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.sandbox-grid .sandbox__details .sandbox__links .sandbox__link {
   margin-top: 0.5rem;
   font-size: 1.4rem;
-  color: #007bff;
   text-decoration: none;
-}
-.sandbox-grid .sandbox__details .sandbox__link:hover {
-  text-decoration: underline;
-  color: #0056b3;
 }
 @media (max-width: 768px) {
   .sandbox-grid .sandbox {
@@ -418,6 +508,9 @@ body {
   border-radius: 4px;
   height: auto;
   aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .experience__right__list {
   list-style: disc;

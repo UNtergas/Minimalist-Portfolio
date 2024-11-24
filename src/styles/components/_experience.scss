@@ -61,6 +61,10 @@
       border-radius: 4px;
       height: auto;
       aspect-ratio: 4 / 3;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     &__list {
       list-style: disc;
@@ -97,7 +101,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width:  $bp-mobile) {
     grid-template-columns: 1fr;
     gap: 1.5rem;
 

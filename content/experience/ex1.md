@@ -1,20 +1,20 @@
 ---
-title: "Project One"
-company: "Company One"
-location: "City, Country"
-date: "2024-11-21"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cum, dolorem earum eius et expedita, fugiat itaque libero
-            minus nihil non odit possimus similique suscipit. Aliquid
-            amet beatae ipsum nemo quaerat."  
+title: "Le Mustang Troyes"
+company: "Ceo Techs"
+location: "Paris, France"
+date: "6/2024 - 8/2024"
+description: "An application for managing a restaurant,
+    including a admin interface for managing the menu, orders, shipping,and payment."
 work:
-  - "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-  - "Cum, dolorem earum eius et expedita, fugiat itaque libero."
-  - "Minus nihil non odit possimus similique suscipit."
-  - "Aliquid amet beatae ipsum nemo quaerat."
-link: "https://example.com/project-one"
+  - "Refactoring the old frontend code"
+  - "Adjusting old backend code, adding the missing test system"
+  - "Apply docker architecture to the backend server"
+link: "https://lemustang-troyes.fr/"
+image : "/experience/ex1.png"
 tags:
   - React
-  - Next.js
-  - TailwindCSS
+  - JavaScript
+  - Material-UI
+  - Django
+  - Docker
 ---

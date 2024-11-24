@@ -1,15 +1,16 @@
 ---
-title: "Project One"
-date: "2024-11-21"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cum, dolorem earum eius et expedita, fugiat itaque libero
-            minus nihil non odit possimus similique suscipit. Aliquid
-            amet beatae ipsum nemo quaerat."  
-link: "https://example.com/project-one"
+title: "COFFWOK - Coffee study together"
+date: "6/2023 – 7/2023"
+description: "A web application
+allowing the creation of a profile on a public thread to find someone to work with
+or study together in a cafe."  
+link: "https://www.coffwok.com/"
+github: "none"
+image: "/project/project1.png"
 tags:
   - React
-  - Next.js
-  - TailwindCSS
+  - SpringBoot
+  - CSS
 ---
 
-This is the full content for Project One. You can use **Markdown** for additional details!
+Placeholder  
