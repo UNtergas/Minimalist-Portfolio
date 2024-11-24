@@ -1,0 +1,23 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+
+  &__title {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    color: $dark-gray;
+  }
+
+  &__scroll {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+}

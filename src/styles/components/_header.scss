@@ -1,0 +1,92 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem 2rem 5rem;
+  max-width: 90vw;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 10;
+  background: $white;
+
+  &__logo{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30rem;
+
+    ul {
+      display: flex;
+      gap: 10rem;
+      font-size: 2rem;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+
+  }
+
+  &__toggle {
+    display: none; /* Hidden by default, only shown on mobile */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  /* Responsive styles for mobile */
+  @media (max-width: 768px) {
+    &__nav {
+      position: fixed; /* Fix to the viewport */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $light-gray; /* Fullscreen white background */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+
+      ul {
+        flex-direction: column;
+        gap: 1.5rem; /* Larger gap between menu items */
+
+        li {
+          a {
+            font-size: 1.5rem; /* Larger font for better usability */
+          }
+        }
+      }
+
+    }
+
+    /* Show menu when toggled */
+    &__nav_open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Toggle button visible on mobile */
+    &__toggle {
+      display: block;
+    }
+  }
+}

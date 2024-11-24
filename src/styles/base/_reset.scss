@@ -1,0 +1,56 @@
+/*----------------------------------------------
+General styles
+----------------------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 200rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+#page{
+  max-width: 80%;
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Space between the title and the lines */
+    font-size: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 50vw;
+      &::before,
+      &::after {
+        content: ''; /* Empty content for the lines */
+        flex: 1; /* The line will take the remaining space */
+        width: 100%;
+        height: 2px;
+        background-color: $heavy-gray;
+      }
+    &--small{
+      font-size: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 768px){
+        font-size: 5rem;
+    }
+  }
+
+}

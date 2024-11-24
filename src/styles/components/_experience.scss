@@ -1,0 +1,145 @@
+.experience{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  &__left {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-right: 2px solid $heavy-gray;
+    padding-right: 1rem;
+
+    &__title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    &__location {
+      font-size: 2rem;
+      color: $black-88;
+    }
+    &__company {
+      font-size: 2rem;
+      font-weight: normal;
+      color: $heavy-gray;
+      margin-bottom: 0.5rem;
+    }
+    .experience__separator {
+      border: none;
+      height: 2px;
+      background-color: $heavy-gray;
+      margin: 1rem 0;
+      width: 40%;
+    }
+    &__date {
+      font-size: 2rem;
+      color: $dark-gray;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 80%;
+
+    &__description {
+      font-size: 1.6rem;
+      color: #444;
+      line-height: 1.6;
+
+    }
+
+    &__image{
+      flex: 1;
+      background-color: blue;
+      border-radius: 4px;
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
+    &__list {
+      list-style: disc;
+      margin-left: 1.5rem;
+      font-size: 2rem;
+      color: $heavy-gray;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .experience__tags{
+    font-size: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    .experience__tag{
+      background: $light-gray;
+      border-radius: 4px;
+      padding: 0.25rem 0.5rem;
+      color: $black-88;
+    }
+  }
+
+  .experience__link {
+    align-self: flex-start;
+    font-size: 2rem;
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    &__left {
+      align-items: flex-start;
+      border-right: none;
+      padding-right: 0;
+
+      &__title {
+        font-size: 2.5rem;
+      }
+      &__location,
+      &__company,
+      &__date {
+        font-size: 1.8rem;
+      }
+      .experience__separator {
+        width: 100%;
+      }
+    }
+
+    &__right {
+      max-width: 100%;
+      &__description {
+        font-size: 1.4rem;
+      }
+      &__image {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+      &__list {
+        font-size: 1.6rem;
+      }
+    }
+
+    .experience__tags {
+      justify-content: center;
+    }
+
+    .experience__link {
+      align-self: center;
+      font-size: 1.8rem;
+    }
+  }
+}

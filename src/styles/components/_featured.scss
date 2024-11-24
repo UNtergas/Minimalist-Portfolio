@@ -1,0 +1,120 @@
+.project {
+  display: flex;
+  gap: 1rem; /* Space between the image and text */
+  margin-bottom: 2rem; /* Space between projects */
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+
+  &__image {
+    flex: 1; /* Allow the image to take flexible width */
+    background-color: blue;
+    border-radius: 4px;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Maintain a 4:3 aspect ratio */
+  }
+
+  &__details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    .project__title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .project__day{
+        font-size: 2rem;
+        color: $black-88;
+    }
+
+    .project__description {
+      font-size: 1.8rem;
+      color: $black-88;
+    }
+    .project__separator {
+      border: none;
+      height: 1px;
+      background-color: $heavy-gray;
+      margin: 1rem 0;
+      width: 90%;
+    }
+    .project__tags {
+      font-size: 1.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      .project__tag {
+        background: $light-gray;
+        border-radius: 4px;
+        padding: 0.25rem 0.5rem;
+        color: $black-88;
+      }
+    }
+
+    .project__link {
+      align-self: flex-start;
+      font-size: 2rem;
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  /* Reverse layout for odd projects */
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+
+    & > .project__details {
+      text-align: right;
+
+      .project__separator{
+        align-self: flex-end;
+      }
+      .project__link {
+        align-self: flex-end;
+      }
+      .project__tags{
+        align-self: flex-end;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+
+    &__details {
+      text-align: left;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: column;
+
+      & > .project__details {
+        text-align: left;
+
+        .project__separator{
+          align-self: start;
+        }
+        .project__link {
+          align-self: start;
+        }
+        .project__tags{
+          align-self: start;
+        }
+      }
+    }
+  }
+}
