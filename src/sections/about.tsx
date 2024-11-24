@@ -51,7 +51,7 @@ export default function AboutPage() {
 
                 <p>
                     After spending three years in a
-                    <span className="highlight vietnam"> Vietnamese</span>
+                    <span className="highlight vietnam"> Vietnamese </span>
                     high school specializing in Physics, I initially
                     envisioned a future in mechanical engineering. However, after moving to
                     <span className="highlight france"> France</span>,
