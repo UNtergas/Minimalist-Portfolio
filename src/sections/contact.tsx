@@ -20,10 +20,10 @@ export default function ContactPage() {
                         >Write Message
                     </button>
                     <div className="contact__icons">
-                        <a href="https://github.com/UNtergas" target="_blank" className="icon">
+                        <a href="https://www.linkedin.com/in/tubanguyen" target="_blank" className="icon">
                             <Image src={'/linkedin_24.svg'} alt={'linked'} width={24} height={24}/>
                         </a>
-                        <a href="https://www.linkedin.com/in/tubanguyen" target="_blank" className="icon">
+                        <a href="https://github.com/UNtergas" target="_blank" className="icon">
                             <Image src={'/git_24.svg'} alt={'git'} width={24} height={24}/>
                         </a>
                     </div>
