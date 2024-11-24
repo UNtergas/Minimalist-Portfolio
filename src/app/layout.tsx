@@ -13,8 +13,8 @@ const font = Comic_Neue({
 })
 
 export const metadata: Metadata = {
-  title: "Main page",
-  description: "The landing page",
+  title: "Tubab-Portfolio",
+  description: "An simple portfolio website for a very simple person",
 };
 
 export default function RootLayout({
