@@ -1,15 +1,15 @@
 ---
-title: "Project Two"
-date: "2024-10-15"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cum, dolorem earum eius et expedita, fugiat itaque libero
-            minus nihil non odit possimus similique suscipit. Aliquid
-            amet beatae ipsum nemo quaerat."
-link: "https://example.com/project-two"
+title: "Ceasar 3 - 2.5D City building game"
+date: "9/2022 – 2/2023"
+description: "A simple DIY version of Caesar 3 game, allowing the player to manage a city.
+"
+link: "none"
+github: "https://github.com/jumscrafteur/appius"
+image: "/project/project2.png"
 tags:
   - Node.js
   - Express
   - MongoDB
 ---
 
-Details about Project Two go here. Markdown makes it easy to write rich content.
+Placeholder  

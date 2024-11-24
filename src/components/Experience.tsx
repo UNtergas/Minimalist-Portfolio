@@ -1,4 +1,5 @@
 import { MarkdownData,ExperienceFrontMatter } from "@/app/types";
+import Image from "next/image";
 // import Markdown from "markdown-to-jsx";
 
 const Experience = ({
@@ -29,7 +30,7 @@ const Experience = ({
                         ))}
                     </ul>
                     <hr className={"experience__separator"}/>
-                    <div className={"experience__right__image"}></div>
+                    <div className={"experience__right__image"} style={{backgroundImage: `url(${experience.frontMatter.image})`}}></div>
                     <div className={"experience__right__description"}>{experience.frontMatter.description}</div>
                     <div className="experience__tags">
                         {experience.frontMatter.tags.map((tag, index) => (
@@ -43,7 +44,7 @@ const Experience = ({
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            🔗 View Project
+                            <Image src={"/link_14.svg"} alt={"🔗 View Project"} width={14} height={14}/>
                         </a>
                     </div>
                 </div>

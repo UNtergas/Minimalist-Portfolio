@@ -1,14 +1,15 @@
 ---
-title: "Project One"
-date: "2024-11-21"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cum, dolorem earum eius et expedita, fugiat itaque libero
-            minus nihil non odit possimus similique suscipit. Aliquid
-            amet beatae ipsum nemo quaerat."
-link: "https://example.com/project-one"
+title: "Kanban List"
+date: "11-2024"
+description: "A simple Kanban list using React+Typescript with react-beautiful-dnd.
+Now migrate to a monorepo with pnpm workspaces."
+link: "https://trello-clone-eta-two.vercel.app/"
+github: "https://github.com/UNtergas/Official-Todo-App"
+image: "/sandbox/sandbox2.png"
+
 tags:
   - React
-  - Next.js
-  - TailwindCSS
+  - TypeScript
+  - Styled Components
 ---
-
+Placeholder  

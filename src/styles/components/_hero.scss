@@ -19,5 +19,10 @@
   &__scroll {
     margin-top: 2rem;
     font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.5); /* Make it bigger on hover */
+    }
   }
 }

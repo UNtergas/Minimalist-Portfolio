@@ -1,6 +1,7 @@
 'use client'
 import {useState} from "react";
 import NavLink from "@/components/NavLink";
+import Image from "next/image";
 
 const Navbar = () => {
 
@@ -16,7 +17,9 @@ const Navbar = () => {
     return (
         <>
             <div className={'header__logo'} onClick={closeMenu}>
-                <NavLink href={'#hero'} callback={closeMenu}> Logo</NavLink>
+                <NavLink href={'#hero'} callback={closeMenu}> 
+                    <Image src={"/logo.png"} alt={"logo"} width={40} height={40}/>
+                </NavLink>
             </div>
             {/* Hamburger Menu Button (Visible on Mobile) */}
             <button

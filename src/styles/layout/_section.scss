@@ -11,9 +11,17 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  }
-  & > p{
-    font-size: 2rem;
-    max-width: 60rem;
+    & > p{
+      font-size: 2rem;
+      max-width: 60rem;
+    }
+    .cv-link {
+      text-decoration: underline;
+      color: black; /* Set link color to black */
+    }
+
+    .cv-link:visited {
+      color: black; /* Prevent visited links from changing color */
+    }
   }
 }
