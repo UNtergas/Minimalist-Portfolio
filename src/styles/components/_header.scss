@@ -48,14 +48,14 @@
   }
 
   /* Responsive styles for mobile */
-  @media (max-width: 768px) {
+  @media (max-width: $bp-mobile) {
     &__nav {
-      position: fixed; /* Fix to the viewport */
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: $light-gray; /* Fullscreen white background */
+      background-color: $light-gray;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -66,11 +66,11 @@
 
       ul {
         flex-direction: column;
-        gap: 1.5rem; /* Larger gap between menu items */
+        gap: 1.5rem;
 
         li {
           a {
-            font-size: 1.5rem; /* Larger font for better usability */
+            font-size: 4rem;
           }
         }
       }

@@ -4,7 +4,7 @@
   gap: 2rem; /* Space between the grid items */
   padding: 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: $bp-mobile) {
     grid-template-columns: 1fr; /* Single column on smaller screens */
   }
 

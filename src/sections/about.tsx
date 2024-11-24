@@ -50,8 +50,12 @@ export default function AboutPage() {
             <div ref={contentRef} className={"section__content"}>
 
                 <p>
-                    After spending three years in a Vietnamese high school specializing in Physics, I initially
-                    envisioned a future in mechanical engineering. However, after moving to France for university, my
+                    After spending three years in a
+                    <span className="highlight vietnam"> Vietnamese</span>
+                    high school specializing in Physics, I initially
+                    envisioned a future in mechanical engineering. However, after moving to
+                    <span className="highlight france"> France</span>,
+                    for university, my
                     interests took an unexpected yet exciting turn
                     toward computer science.
                 </p>
@@ -61,9 +65,13 @@ export default function AboutPage() {
                     stack developer.
                 </p>
                 <p>
-                    Along both university and personal projects, I’ve picked up a range of skills—using Django,
-                    Node.js, Java, React, and Next.js for development, Docker for deployment, and even getting a taste
-                    of cybersecurity`
+                    Along both university and personal projects, I’ve picked up a range of skills—using
+                    <span className="highlight django"> Django</span>,
+                    <span className="highlight nodejs"> Node.js</span>,
+                    <span className="highlight java"> Java</span>,
+                    <span className="highlight react"> React</span>, and
+                    <span className="highlight nextjs"> Next.js</span> for development,
+                    <span className="highlight docker"> Docker </span> for deployment, and even getting a taste of cybersecurity.
                 </p>
                 <p>
                     After all, since the very beginning, I have always been curious about where my journey will take me

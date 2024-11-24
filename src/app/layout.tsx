@@ -1,13 +1,14 @@
 
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google'
+import {Comic_Neue} from "next/font/google";
 
 import React from "react";
 import '@/styles/main.css';
 import Header from "@/containers/Header";
 
-const inter = Inter({
+const font = Comic_Neue({
     subsets: ['latin'],
+    weight: ["400", "700"],
     display: 'swap',
 })
 
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <>
             <Header/>
             <div id="page">
