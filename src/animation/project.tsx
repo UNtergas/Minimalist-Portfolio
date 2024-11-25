@@ -63,7 +63,8 @@ export default function ProjectSection({ projects, sandboxs }: ProjectSectionPro
                         opacity: 1,
                         duration: 1,
                     },
-                    index * 0.2 // Stagger animations by 0.2 seconds
+                    index,
+
                 );
             });
         });

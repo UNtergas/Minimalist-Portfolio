@@ -8,6 +8,7 @@
 
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -23,6 +24,8 @@
         cursor: pointer;
         font-weight: bold;
         color: $heavy-gray;
+
+
       }
       &:visited {
         color: $black-88;
@@ -30,44 +33,124 @@
     }
 
     .highlight {
+      font-size: 2.5rem;
+      font-weight: 700;
       transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
       &:hover {
         cursor: pointer;
-        font-weight: bold;
       }
       &.vietnam:hover {
         color: red;
+        & ~ .about-image.vietnam{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
       &.france:hover {
         color: blue;
+        & ~ .about-image.france{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
 
       &.django:hover {
         color: darkblue;
+        & ~ .about-image.django{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
 
       &.nodejs:hover {
         color: green;
+        & ~ .about-image.nodejs{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
 
       &.java:hover {
         color: orange;
+        & ~ .about-image.java{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
 
       &.react:hover {
         color: skyblue;
+        & ~ .about-image.react{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
 
       &.nextjs:hover {
         color: purple;
+        & ~ .about-image.nextjs{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
 
       &.docker:hover {
         color: cornflowerblue;
+        & ~ .about-image.docker{
+          opacity: 1;
+          @media (max-width: $bp-mobile) {
+            opacity: 0.2;
+          }
+        }
       }
-
-      // Add more keywords as needed
     }
 
+    .about-image{
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.2s ease;
+      top:20vh;
+
+      &.left-image{
+
+        left: -10vw;
+        transform: translate(-50%, -50%)
+      }
+      &.right-image{
+
+        right: -10vw;
+        transform: translate(50%, -50%)
+      }
+      @media (max-width: $bp-mobile) {
+        z-index: -1;
+        position: fixed;
+        &.left-image {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -100%);
+        }
+
+        &.right-image {
+          bottom: 50%;
+          left: 50%;
+          transform: translate(-50%, 100%);
+        }
+
+      }
+    }
   }
 }

@@ -65,6 +65,7 @@ body {
   align-items: center;
 }
 .section__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -87,35 +88,130 @@ body {
   color: #1F1F1F;
 }
 .section__content .highlight {
+  font-size: 2.5rem;
+  font-weight: 700;
   transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
 }
 .section__content .highlight:hover {
   cursor: pointer;
-  font-weight: bold;
 }
 .section__content .highlight.vietnam:hover {
   color: red;
 }
+.section__content .highlight.vietnam:hover ~ .about-image.vietnam {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.vietnam:hover ~ .about-image.vietnam {
+    opacity: 0.2;
+  }
+}
 .section__content .highlight.france:hover {
   color: blue;
+}
+.section__content .highlight.france:hover ~ .about-image.france {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.france:hover ~ .about-image.france {
+    opacity: 0.2;
+  }
 }
 .section__content .highlight.django:hover {
   color: darkblue;
 }
+.section__content .highlight.django:hover ~ .about-image.django {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.django:hover ~ .about-image.django {
+    opacity: 0.2;
+  }
+}
 .section__content .highlight.nodejs:hover {
   color: green;
+}
+.section__content .highlight.nodejs:hover ~ .about-image.nodejs {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.nodejs:hover ~ .about-image.nodejs {
+    opacity: 0.2;
+  }
 }
 .section__content .highlight.java:hover {
   color: orange;
 }
+.section__content .highlight.java:hover ~ .about-image.java {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.java:hover ~ .about-image.java {
+    opacity: 0.2;
+  }
+}
 .section__content .highlight.react:hover {
   color: skyblue;
+}
+.section__content .highlight.react:hover ~ .about-image.react {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.react:hover ~ .about-image.react {
+    opacity: 0.2;
+  }
 }
 .section__content .highlight.nextjs:hover {
   color: purple;
 }
+.section__content .highlight.nextjs:hover ~ .about-image.nextjs {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.nextjs:hover ~ .about-image.nextjs {
+    opacity: 0.2;
+  }
+}
 .section__content .highlight.docker:hover {
   color: cornflowerblue;
+}
+.section__content .highlight.docker:hover ~ .about-image.docker {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .section__content .highlight.docker:hover ~ .about-image.docker {
+    opacity: 0.2;
+  }
+}
+.section__content .about-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  top: 20vh;
+}
+.section__content .about-image.left-image {
+  left: -10vw;
+  transform: translate(-50%, -50%);
+}
+.section__content .about-image.right-image {
+  right: -10vw;
+  transform: translate(50%, -50%);
+}
+@media (max-width: 768px) {
+  .section__content .about-image {
+    z-index: -1;
+    position: fixed;
+  }
+  .section__content .about-image.left-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  .section__content .about-image.right-image {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
 }
 
 .contact {
@@ -147,7 +243,7 @@ body {
   gap: 2rem;
 }
 .contact__footer {
-  margin-top: rem;
+  margin-top: 3rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
