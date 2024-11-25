@@ -10,7 +10,7 @@ https://www.tubannguyen.info/
 
 This is a minimalist portfolio built with Next.js and Scss for styling 
 along side with GSAP for animations. 
-The website if fully responsive and follow the 1 page scroll design.
+The website is fully responsive and follow the single page scrolling design.
 
 #### Architecture
 
