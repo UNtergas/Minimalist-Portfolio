@@ -56,7 +56,3 @@ const Project = ({
 export default Project;
 
 
-//
-// < div className = "projects__content" >
-//     < Markdown > {project.content} </Markdown>
-// </div>

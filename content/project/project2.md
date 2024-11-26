@@ -7,9 +7,9 @@ link: "none"
 github: "https://github.com/jumscrafteur/appius"
 image: "/project/project2.png"
 tags:
-  - Node.js
-  - Express
-  - MongoDB
+  - Python
+  - Pygame
+  - C
 ---
 
 Placeholder  
