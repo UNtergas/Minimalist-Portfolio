@@ -1,6 +1,7 @@
 export interface BaseFrontMatter {
     title: string;
     description: string;
+    slug: string;
 }
 export interface ProjectFrontMatter extends BaseFrontMatter {
     date: string;

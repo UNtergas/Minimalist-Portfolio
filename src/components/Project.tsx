@@ -1,5 +1,6 @@
 import { MarkdownData,ProjectFrontMatter} from "@/app/types";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -26,28 +27,37 @@ const Project = ({
                         <span key={index} className="project__tag">{tag}</span>
                     ))}
                 </div>
-                {project.frontMatter.link !== "none" && (
-                    <a
-                        className="project__link"
-                        href={project.frontMatter.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image src={"/link_14.svg"} alt={"🔗 View Project"} width={14} height={14}/>
-                    </a>
-                )}
+                <div className="project__links">
+                    {project.frontMatter.link !== "none" && (
+                        <a
+                            className="project__link"
+                            href={project.frontMatter.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image src={"/link_14.svg"} alt={"🔗 View Project"} width={14} height={14}/>
+                        </a>
+                    )}
 
-                {project.frontMatter.github !== "none" && (
-                    <a
-                        className="project__link"
-                        href={project.frontMatter.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image src={"/git_16.svg"} alt={"🛠 View GitHub"} width={16} height={16}/>
-                    </a>
-                )}
+                    {project.frontMatter.github !== "none" && (
+                        <a
+                            className="project__link"
+                            href={project.frontMatter.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image src={"/git_16.svg"} alt={"🛠 View GitHub"} width={16} height={16}/>
+                        </a>
+                    )}
 
+                    {/*  Link to the markdown content page */}
+                    <Link
+                        href={`/${project.frontMatter.slug}`}  // Assuming `slug` is part of the front matter
+                        className="project__link"
+                    >
+                        View Content
+                    </Link>
+                </div>
             </div>
         </div>
     );

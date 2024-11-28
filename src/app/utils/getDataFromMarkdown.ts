@@ -22,3 +22,15 @@ export const getMarkdownData = async<T = MarkdownFrontMatter> (fileDir: string):
     };
   });
 };
+
+export const getSingleMarkdownData = async <T = MarkdownFrontMatter>(fileDir: string, slug: string): Promise<MarkdownData<T>> => {
+  const filePath = path.join(process.cwd(), 'content', fileDir, `${slug}.md`); // Directly target the file based on the slug
+
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const { data, content } = matter(fileContents);
+
+  return {
+    frontMatter: data as T,
+    content,
+  };
+};

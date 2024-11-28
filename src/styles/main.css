@@ -28,6 +28,24 @@ body {
 #page {
   max-width: 80%;
 }
+#page__not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10rem;
+  font-size: 8rem;
+}
+#page__not-found a {
+  font-size: 2rem;
+  color: #555;
+  text-decoration: none;
+}
+#page__not-found a:hover {
+  color: #949494;
+  text-decoration: underline;
+}
 #page__title {
   display: flex;
   align-items: center;
@@ -248,6 +266,28 @@ body {
   margin-bottom: 1rem;
 }
 
+.markdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  font-size: 2rem;
+}
+.markdown-content h1, .markdown-content h2, .markdown-content h3, .markdown-content h4, .markdown-content h5, .markdown-content h6 {
+  margin: 2rem;
+}
+.markdown-content img {
+  width: 100rem;
+  height: auto;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .markdown-content {
+    font-size: 1.5rem;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -261,6 +301,15 @@ body {
   z-index: 10;
   background: #FFFFFF;
   /* Responsive styles for mobile */
+}
+.header .to-home-element {
+  font-size: 2rem;
+  color: #555;
+  text-decoration: none;
+}
+.header .to-home-element:hover {
+  color: #949494;
+  text-decoration: underline;
 }
 .header__logo {
   font-size: 2rem;
@@ -326,6 +375,23 @@ body {
   }
   .header__toggle {
     display: block;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the logo and the text */
+}
+
+.header__logo p {
+  margin-left: 1rem;
+  font-size: 3rem; /* Adjust font size */
+  /* Hide the paragraph on mobile devices */
+}
+@media (max-width: 768px) {
+  .header__logo p {
+    display: none;
   }
 }
 
@@ -413,13 +479,18 @@ body {
   padding: 0.25rem 0.5rem;
   color: #1F1F1F;
 }
-.project__details .project__link {
+.project__details .project__links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
   align-self: flex-start;
+}
+.project__details .project__links .project__link {
   font-size: 2rem;
-  color: #007bff;
+  color: #555;
   text-decoration: none;
 }
-.project__details .project__link:hover {
+.project__details .project__links .project__link:hover {
   text-decoration: underline;
 }
 .project:nth-child(odd) {
@@ -431,7 +502,7 @@ body {
 .project:nth-child(odd) > .project__details .project__separator {
   align-self: flex-end;
 }
-.project:nth-child(odd) > .project__details .project__link {
+.project:nth-child(odd) > .project__details .project__links {
   align-self: flex-end;
 }
 .project:nth-child(odd) > .project__details .project__tags {

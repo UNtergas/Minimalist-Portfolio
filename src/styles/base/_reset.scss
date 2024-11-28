@@ -28,6 +28,24 @@ body {
 
 #page{
   max-width: 80%;
+  &__not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10rem;
+    font-size: 8rem;
+    a{
+        font-size: 2rem;
+        color: $heavy-gray;
+        text-decoration: none;
+        &:hover{
+            color: $dark-gray;
+            text-decoration: underline;
+        }
+    }
+  }
   &__title{
     display: flex;
     align-items: center;

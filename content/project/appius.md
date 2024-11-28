@@ -1,23 +1,16 @@
 ---
-title: "Le Mustang Troyes"
-slug: "lemustang"
-company: "Ceo Techs"
-location: "Paris, France"
-date: "6/2024 - 8/2024"
-description: "An application for managing a restaurant,
-    including a admin interface for managing the menu, orders, shipping,and payment."
-work:
-  - "Refactoring the old frontend code"
-  - "Adjusting old backend code, adding the missing test system"
-  - "Apply docker architecture to the backend server"
-link: "https://lemustang-troyes.fr/"
-image : "/experience/ex1.png"
+title: "Ceasar 3 - 2.5D City building game"
+slug: "appius"
+date: "9/2022 – 2/2023"
+description: "A simple DIY version of Caesar 3 game, allowing the player to manage a city.
+"
+link: "none"
+github: "https://github.com/jumscrafteur/appius"
+image: "/project/project2.png"
 tags:
-  - React
-  - JavaScript
-  - Material-UI
-  - Django
-  - Docker
+  - Python
+  - Pygame
+  - C
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec
