@@ -1,5 +1,5 @@
-import { getMarkdownData } from "@/app/utils/getDataFromMarkdown";
-import { MarkdownData, ProjectFrontMatter } from "@/app/types";
+import { getMarkdownData } from "@/utils/getDataFromMarkdown";
+import { MarkdownData, ProjectFrontMatter } from "../types";
 import ProjectSection from "@/animation/project";
 
 export default async function ProjectPage() {

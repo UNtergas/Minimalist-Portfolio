@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Experience from "@/components/Experience";
-import { ExperienceFrontMatter, MarkdownData } from "@/app/types";
+import { ExperienceFrontMatter, MarkdownData } from "../types";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 

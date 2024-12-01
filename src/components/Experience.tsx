@@ -1,4 +1,4 @@
-import { MarkdownData,ExperienceFrontMatter } from "@/app/types";
+import { MarkdownData,ExperienceFrontMatter } from "../types";
 import Image from "next/image";
 // import Markdown from "markdown-to-jsx";
 

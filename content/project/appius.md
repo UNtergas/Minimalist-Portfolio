@@ -33,7 +33,7 @@ Using pygame, the game will be an infinite loop till shutdown, and each loop wil
 
 ![appius2.png](/project/img/appius2.png)
 
-## The interaction phrase
+### I.The interaction phrase
 There are two main interactions with the game: through keyboard and through mouse.
 
 For the keyboard, I have used the pygame key listener to know which key is being pressed at the time to register it to the interaction buffer. While mouse interaction will be class into 2 case:
@@ -44,7 +44,7 @@ Map interaction and Hud interaction. Map interaction consists of all interaction
 
 Hud interaction is on other hand be listen by a separated class which listen on button interaction on the right screen hud.
 
-### Event Simulation Phase
+### II.Event Simulation Phase
 For calculating event, each event will be handled by a separated class:  
 
 Building event will be listen by the builder class, fire event will be listen by the fire class and etc
@@ -63,7 +63,7 @@ Also apart from the user based event there are also time event like house evolut
 
 (***Example: House update after reaching inhabitant cap and be close to a water well***)
 
-### Npc
+#### Npc handling
 
 Aside from user handling all the things, in this game there are also some npcs that do it own job.
 A nominated example for this is a Fireman bot who will run around in the map and will try to find and extinguish any building on fire.
@@ -77,7 +77,7 @@ To implement a Fireman to be able to do this, it has to have 2 key-feature:
 - Memory: it need to remember if it is current on mission or just chill around, this can be solve easily by a mission queue
 - to the point: it need to find the fastest way to the destination, for this I have choose A-star to be the algo for the path fiding.
 
-## Rendering Phase:
+### III.Rendering Phase:
 
 ![appius7.png](/project/img/appius7.png)
 

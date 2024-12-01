@@ -1,4 +1,4 @@
-import { MarkdownData,ProjectFrontMatter } from "@/app/types";
+import { MarkdownData,ProjectFrontMatter } from "../types";
 import Image from "next/image";
 // import Markdown from "markdown-to-jsx";
 

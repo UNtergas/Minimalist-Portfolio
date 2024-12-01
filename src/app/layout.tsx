@@ -17,20 +17,16 @@ export const metadata: Metadata = {
     description: "An simple portfolio website for a very simple person",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-        <body className={font.className}>
-        <>
-            <div id="page">
-                {children}
-            </div>
-        </>
-        </body>
+            <body className={font.className}>
+                <div id="page">
+                    {children}
+                </div>
+            </body>
         </html>
     );
 }

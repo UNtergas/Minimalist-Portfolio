@@ -1,5 +1,5 @@
-import { MarkdownData, ProjectFrontMatter } from "@/app/types";
-import { getMarkdownData, getSingleMarkdownData } from "@/app/utils/getDataFromMarkdown";
+import { MarkdownData, ProjectFrontMatter } from "../../../types";
+import { getMarkdownData, getSingleMarkdownData } from "@/utils/getDataFromMarkdown";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
 
@@ -25,9 +25,9 @@ async function fetchProjectContent(slug: string): Promise<ProjectContent> {
 interface Params {
     projectSlug: string;
 }
-
-export default async function ProjectPage({ params }: { params: Params }) {
-    const slug = await params.projectSlug;
+// Next15 Dynamic Apis are async, including dynamic routes and slugs
+export default async function ProjectPage({params}: { params: Promise<Params> }) {
+    const slug = (await params).projectSlug;
     const project: ProjectContent = await fetchProjectContent(slug);
 
     if (project.notFound) {

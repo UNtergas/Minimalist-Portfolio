@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Project from "@/components/Project";
 import Sandbox from "@/components/Sandbox";
-import { ProjectFrontMatter, MarkdownData } from "@/app/types";
+import { ProjectFrontMatter, MarkdownData } from "../types";
 
 interface ProjectSectionProps {
     projects: MarkdownData<ProjectFrontMatter>[];
