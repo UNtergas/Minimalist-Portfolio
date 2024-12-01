@@ -3,8 +3,8 @@ import Header from "@/containers/Header";
 
 
 export const metadata: Metadata = {
-    title: 'Next.js Content Page',
-    description: 'Learn how to route to different pages.',
+    title: 'Tubab-Portfolio',
+    description: 'A minimalist portfolio website for a chill guy',
 }
 
 export default function RootLayout({

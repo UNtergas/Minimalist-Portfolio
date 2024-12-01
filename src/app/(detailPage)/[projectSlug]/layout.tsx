@@ -4,8 +4,8 @@ import DetailPageHeader from "@/containers/DetailPageHeader";
 
 
 export const metadata: Metadata = {
-    title: 'SinglePage',
-    description: 'Detail page for projects.',
+    title: 'Perso Thoughts',
+    description: 'My reflections on the projects I have worked on',
 }
 
 

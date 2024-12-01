@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BookmarksViewState">
+    <option name="groupLineBookmarks" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3fb2212-c096-41c6-a6fe-63a632c443ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/app/(detailPage)/[projectSlug]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(detailPage)/[projectSlug]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(singlePage)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(singlePage)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;UNtergas&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/UNtergas/portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;476044d2-d5ba-47c1-bdf3-880f52cff435&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2p1C2TNScujGZoiHgXRW1VpSsEN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;content&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/untergas/Tubab/5A/AA_Fun/portfolio/public/project/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/untergas/Tubab/5A/AA_Fun/portfolio/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/project/img" />
+      <recent name="$PROJECT_DIR$/public/project" />
+      <recent name="$PROJECT_DIR$/public/about" />
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/public/cv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(detailPage)/[projectSlug]" />
+      <recent name="$PROJECT_DIR$/src/app/(detailPage)" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/app/(singlePage)" />
+      <recent name="$PROJECT_DIR$/src/app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3fb2212-c096-41c6-a6fe-63a632c443ab" name="Changes" comment="" />
+      <created>1731923987771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731923987771</updated>
+      <workItem from="1731923988934" duration="423000" />
+      <workItem from="1731924418562" duration="178000" />
+      <workItem from="1731924612555" duration="37000" />
+      <workItem from="1731924663353" duration="663000" />
+      <workItem from="1731925468124" duration="2783000" />
+      <workItem from="1731936774728" duration="1170000" />
+      <workItem from="1731937952775" duration="1482000" />
+      <workItem from="1731939499724" duration="1935000" />
+      <workItem from="1731941450765" duration="7146000" />
+      <workItem from="1732094791194" duration="4000" />
+      <workItem from="1732182065529" duration="5161000" />
+      <workItem from="1732265486340" duration="431000" />
+      <workItem from="1732266036860" duration="432000" />
+      <workItem from="1732266506633" duration="11044000" />
+      <workItem from="1732301418601" duration="6033000" />
+      <workItem from="1732353441380" duration="21079000" />
+      <workItem from="1732438352563" duration="12405000" />
+      <workItem from="1732459239598" duration="26790000" />
+      <workItem from="1732495986314" duration="602000" />
+      <workItem from="1732543543768" duration="8583000" />
+      <workItem from="1732612819221" duration="441000" />
+      <workItem from="1732613508637" duration="627000" />
+      <workItem from="1732622320950" duration="348000" />
+      <workItem from="1732629310914" duration="1014000" />
+      <workItem from="1732715737014" duration="1671000" />
+      <workItem from="1732717475316" duration="1000" />
+      <workItem from="1732788993543" duration="12425000" />
+      <workItem from="1732985364753" duration="10372000" />
+      <workItem from="1733015552690" duration="81000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
