@@ -35,7 +35,7 @@ const Project = ({
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image src={"/link_14.svg"} alt={"🔗 View Project"} width={14} height={14}/>
+                            <Image src={"/link_14.svg"} alt={"🔗 View Project"} width={20} height={20}/>
                         </a>
                     )}
 
@@ -46,7 +46,7 @@ const Project = ({
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image src={"/git_16.svg"} alt={"🛠 View GitHub"} width={16} height={16}/>
+                            <Image src={"/git_16.svg"} alt={"🛠 View GitHub"} width={20} height={20}/>
                         </a>
                     )}
 
@@ -55,7 +55,7 @@ const Project = ({
                         href={`/${project.frontMatter.slug}`}  // Assuming `slug` is part of the front matter
                         className="project__link"
                     >
-                        View Content
+                        &#128173; Thoughts
                     </Link>
                 </div>
             </div>

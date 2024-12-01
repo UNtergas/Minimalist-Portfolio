@@ -26,7 +26,7 @@ const Sandbox = ({ sandbox }: { sandbox: MarkdownData<ProjectFrontMatter> }) => 
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Image src={"/link_12.svg"} alt={"🔗 View Project"} width={12} height={12}/>
+                        <Image src={"/link_12.svg"} alt={"🔗 View Project"} width={14} height={14}/>
                     </a>
                 )}
 
@@ -37,7 +37,7 @@ const Sandbox = ({ sandbox }: { sandbox: MarkdownData<ProjectFrontMatter> }) => 
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Image src={"/git_14.svg"} alt={"🛠 View GitHub"} width={14} height={14}/>
+                        <Image src={"/git_14.svg"} alt={"🛠 View GitHub"} width={16} height={16}/>
                     </a>
                 )}
                 </div>

@@ -9,7 +9,7 @@ const DetailPageHeader = () => {
                 <Link href="/">
                     <Image src={"/logo.png"} alt={"logo"} width={40} height={40}/>
                 </Link>
-                <p style={{marginLeft: '1rem', fontSize: '3rem'}}>Project Description Page</p>
+                <p style={{marginLeft: '1rem', fontSize: '3rem'}}>Reflections</p>
             </div>
             <Link href="/" className="to-home-element"> To homepage</Link>
         </header>
