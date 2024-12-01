@@ -1,6 +1,6 @@
 // app/experience/page.tsx
-import { getMarkdownData } from "@/app/utils/getDataFromMarkdown";
-import { ExperienceFrontMatter, MarkdownData } from "@/app/types";
+import { getMarkdownData } from "@/utils/getDataFromMarkdown";
+import { ExperienceFrontMatter, MarkdownData } from "../types";
 import ExperienceSection from "@/animation/experience";
 
 export default async function ExperiencePage() {

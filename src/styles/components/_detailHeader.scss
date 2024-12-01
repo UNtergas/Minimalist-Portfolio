@@ -1,0 +1,16 @@
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the logo and the text */
+}
+
+.header__logo p {
+
+  margin-left: 1rem;
+  font-size: 3rem; /* Adjust font size */
+
+  /* Hide the paragraph on mobile devices */
+  @media (max-width: $bp-mobile) {
+    display: none;
+  }
+}

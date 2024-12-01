@@ -1,4 +1,4 @@
-import { MarkdownData,ExperienceFrontMatter } from "@/app/types";
+import { MarkdownData,ExperienceFrontMatter } from "../types";
 import Image from "next/image";
 // import Markdown from "markdown-to-jsx";
 
@@ -44,7 +44,7 @@ const Experience = ({
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image src={"/link_14.svg"} alt={"🔗 View Project"} width={14} height={14}/>
+                            <Image src={"/link_14.svg"} alt={"🔗 View Project"} width={20} height={20}/>
                         </a>
                     </div>
                 </div>

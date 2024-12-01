@@ -59,15 +59,19 @@
         color: $black-88;
       }
     }
-
-    .project__link {
+    .project__links{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
       align-self: flex-start;
-      font-size: 2rem;
-      color: #007bff;
-      text-decoration: none;
+      .project__link {
+        font-size: 2rem;
+        color: $heavy-gray;
+        text-decoration: none;
 
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -81,7 +85,7 @@
       .project__separator{
         align-self: flex-end;
       }
-      .project__link {
+      .project__links {
         align-self: flex-end;
       }
       .project__tags{

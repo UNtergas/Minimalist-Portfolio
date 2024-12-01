@@ -1,5 +1,6 @@
 ---
 title: "Le Mustang Troyes"
+slug: "lemustang"
 company: "Ceo Techs"
 location: "Paris, France"
 date: "6/2024 - 8/2024"
@@ -18,3 +19,11 @@ tags:
   - Django
   - Docker
 ---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec
+suscipit ultricies, nunc nunc ultricies nunc, nec suscipit nunc nunc nec. Nullam
+auctor, nunc nec suscipit ultricies, nunc nunc ultricies nunc, nec suscipit nunc
+nunc nec. Nullam auctor, nunc nec suscipit ultricies, nunc nunc ultricies nunc,
+nec suscipit nunc nunc nec. Nullam auctor, nunc nec suscipit ultricies, nunc nunc
+ultricies nunc, nec suscipit nunc nunc nec. Nullam auctor, nunc nec suscipit
+ultricies, nunc nunc ultricies nunc, nec suscipit nunc nunc nec. Nullam auctor,
