@@ -5,7 +5,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.1.3-blue)
 
 ## Minimalist Portfolio
-https://www.tubannguyen.info/
 
 
 This is a minimalist portfolio built with Next.js and Scss for styling 
